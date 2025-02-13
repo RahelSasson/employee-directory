@@ -14,7 +14,8 @@ function App() {
 
   return (
     //outermost div element with the class "App", which is styled with a background color of 'mistyrose'
-    //followed by innermost div element with a class of "content" where the content of the App is placed 
+    //decided to add a bit of inline styling so this page has some character
+    //followed by inner div element with a class of "content" where the content of the App is placed 
     //finally the "Home" component is inserted as a child elemeant to be rendered 
     <div className="App" style={{backgroundColor: 'mistyrose'}}>
       <div className="content">

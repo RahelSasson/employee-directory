@@ -1,17 +1,17 @@
 /* 
-Card component returns function that maps through all of the the employees within our json object.
+EmployeeList component returns function that maps through all of the the employees within our json object.
 
 the function also contains a template of :
-{ a div with the class "card-container" to cycle through the array of employeesn 
+{ a div with the class "card-container" to cycle through the array of employees 
  and creates an individual card for each employee }
  using the map() method on the employee variable passed as a prop from Home to cycle through the employees. 
  the map() method fires a callback function where each time we want to return some tempplate; 
- we recieve an object called "employee" for each individual employee 
+ we recieve an object called "employee" for each individual employee.
  which we can use to call other variables, such as: their name or profile picture 
  we then map over each employee using their name as the key. 
  we create a card for each individual employee with all of their corresponding information in the template.
 
-the Card component is then exported to then be imported into and used within the home component
+the EmployeeList component is then exported to then be imported into and used within the home component
 */
 
 import Card from 'react-bootstrap/Card'; //importing Card component from 'react-bootstrap' to display individual employees
@@ -20,7 +20,7 @@ import stockPhoto from './PhotoComingSoon.jpg' //place holder photo in case the 
 /* we pass an argument called 'props' which is an object that we can use to access the information passed from Home */
 const EmployeeList = (props) => {
     /* we used props to pass data from the parent component "Home" to the child component "Card", 
-    setting them to a variables so that they can be used */
+    setting it to an array variable so that they can be used here */
     const employees = props.employees;
 
     return (
@@ -34,10 +34,10 @@ const EmployeeList = (props) => {
                             /* 
                                 since we were tasked explicity with assigning a border to each card,
                                 depending on how long the employee has been with the company:
-                                I decided to put the styling in the Component directly. 
+                                i decided to put the styling in the Component directly. 
                                 This ensures that the style cant be manipulated easily and is not simply for aesthetics.
                                 For larger projects, i would create a seperate css file 
-                                however for small project, this is more convenient 
+                                however for small projects, this is more convenient 
                             */
                             border: employee.yearsAtCompany >= 5 ? '3px solid goldenrod' 
                             : employee.yearsAtCompany <= 1 ? '3px solid firebrick'

@@ -10,13 +10,13 @@ a nav with a "navbar" class, which contains --
 { and a second div with a "links" class to handle out makeshift home button for navigation - 
 contains an anchor for the Home page that points to the root of the application }
 
-the navrbar is then exported to then be imported into and used within the home component
+the navrbar is then exported to then be imported into the home component
 */
 
 /*
-    in the Card component we passed the 'props' object as an argument. 
+    in the EmployeeList component we passed the 'props' object as an argument. 
     in this function, we are desconstructing the proprs and passing the variables we want directly;
-    in this case, it is the search variable and also the handleSearchChange function.
+    in this case, it is the search string and the handleSearchChange function.
 */
 const Navbar = ({search, handleSearchChange}) => {
     return (  
