@@ -17,8 +17,7 @@ The **Employee Directory Project** is a web application built using React. The a
 
 ### Steps to Install
 
-1. **Clone the repository**:
-   ```git clone https://github.com/RahelSasson/employee-directory-project.git```
+1. ```git clone https://github.com/RahelSasson/employee-directory-project.git```
 2. ```cd employee-directory-project```
 3. ```npm install```
 4. ```npm run start```
