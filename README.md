@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Employee Directory Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **Employee Directory Project** is a web application built using React. The application allows users to view and search a list of employees based on their name or department. The directory provides detailed information about each employee, including their role, department, email, and profile picture.
 
-In the project directory, you can run:
+- **Name**
+- **Role**
+- **Department**
+- **Email**
+- **Profile Picture**
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js
+- npm
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to Install
 
-### `npm run build`
+1. **Clone the repository**:
+   ```git clone https://github.com/RahelSasson/employee-directory-project.git```
+2. ```cd employee-directory-project```
+3. ```npm install```
+4. ```npm run start```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Project Structure 
+```
+src/
+  data/
+    employees.json
+  App.js
+  EmployeeList.js
+  Home.js
+  Navbar.js
+  App.css
+  index.js
+  index.css
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+##JSON Data Format
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The employee data is stored in the data/employees.json file in the following format:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+~~~
+{
+  "employees": [
+    {
+      "name": "Alice Johnson",
+      "role": "Software Engineer",
+      "department": "Engineering",
+      "email": "alice@example.com",
+      "profilePicture": "https://example.com/alice.jpg",
+      "yearsAtCompany": 3
+    },
+    {
+      "name": "Bob Smith",
+      "role": "Product Manager",
+      "department": "Product",
+      "email": "bob@example.com",
+      "profilePicture": "https://example.com/bob.jpg",
+      "yearsAtCompany": 5
+    }
+  ]
+}
+~~~
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Fields:
 
-## Learn More
+name: Employee's full name (first and last)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+role: Employee's job title
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+department: Department the employee works in
 
-### Code Splitting
+email: Employee's email address
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+profilePicture: URL to the employee's profile picture
 
-### Analyzing the Bundle Size
+yearsAtCompany: The number of years the employee has worked at the company
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Features 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Displays each employee as a card:
+  
+  Profile Picture
+  
+  Name
+  
+  Role
+  
+  Department
+  
+  Email (Clickable)
+  
+- Conditional Styling:
+  
+  Gold Border: For employees with 5 or more years at the company.
+  
+  Red Border: For employees with 1 year or less.
+  
+  Gray Border: For all other employees.
+  
+- Search Functionality -- Allows users to filter employees by:
+  
+  Name
+  
+  Department
+  
+ (The search is case-insensitive and dynamically updates the displayed employee cards as you type.)
+ 
+- Home Link: A "Home" link located at the upper-right corner that directs to the root of the application for easy navigation.
