@@ -1,7 +1,5 @@
 # Employee Directory Project
 
-## Overview
-
 The **Employee Directory Project** is a web application built using React. The application allows users to view and search a list of employees based on their name or department. The directory provides detailed information about each employee, including their role, department, email, and profile picture.
 
 - **Name**
