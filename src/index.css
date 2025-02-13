@@ -50,7 +50,7 @@ import for a google font called Quicksand
 }
 .content {  
   /* the content which is surrounding the home component and give it a width of 1060, 
-  which is 60px more than the navr bar to account of the spaces between the cards */
+  which is 60px more than the navr bar to account of the 20px spaces between the cards */
   max-width: 1060px;
   margin: 20px auto;
 }

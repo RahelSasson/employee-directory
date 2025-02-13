@@ -9,7 +9,7 @@ the Home component is then exported to then be imported into the App component
 
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import employeeData from './data/employees.json'; // import the JSON employee data
+import employeeData from '../data/employees.json'; // import the JSON employee data
 import EmployeeList from './EmployeeList';
 
 
@@ -130,7 +130,7 @@ const Home = () => {
                 employees && employees.length === 0 &&
                 (<p>Could not fetch employee data.</p>)
                 }
-                
+
            </div>
         </div>
     );

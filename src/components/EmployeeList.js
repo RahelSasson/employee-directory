@@ -15,7 +15,7 @@ the EmployeeList component is then exported to then be imported into and used wi
 */
 
 import Card from 'react-bootstrap/Card'; //importing Card component from 'react-bootstrap' to display individual employees
-import stockPhoto from './PhotoComingSoon.jpg' //place holder photo in case the photo links lead to nowhere.. 
+import stockPhoto from '../assets/PhotoComingSoon.jpg' //place holder photo in case the photo links lead to nowhere.. 
 
 /* we pass an argument called 'props' which is an object that we can use to access the information passed from Home */
 const EmployeeList = (props) => {
