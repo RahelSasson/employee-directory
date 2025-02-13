@@ -118,8 +118,7 @@ yearsAtCompany: The number of years the employee has worked at the company
 
 
 
-
-
+(6 x &nbsp;)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
