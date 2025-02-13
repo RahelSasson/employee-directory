@@ -29,12 +29,15 @@ The **Employee Directory Project** is a web application built using React. The a
 ### Project Structure 
 ```
 src/
+  assests/
+    PhotoComingSoon.jpg
+  components/
+    App.js
+    EmployeeList.js
+    Home.js
+    Navbar.js
   data/
     employees.json
-  App.js
-  EmployeeList.js
-  Home.js
-  Navbar.js
   App.css
   index.js
   index.css
